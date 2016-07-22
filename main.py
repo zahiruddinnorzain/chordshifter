@@ -1,4 +1,4 @@
-keyall = ['A','A#','B','C','C#','D','D#','E','F','F#','G','G#','A','A#','B','C','C#','D','D#','E','F','F#','G','G#']
+keyall = ['A ','A#','B ','C ','C#','D ','D#','E ','F ','F#','G ','G#','A ','A#','B ','C ','C#','D ','D#','E ','F ','F#','G ','G#']
 
 keyalln = ['0 =A','1 =A#','2 =B','3 =C','4 =C#','5 =D','6 =D#','7 =E','8 =F','9 =F#','10=G','11=G#']
 
@@ -13,47 +13,48 @@ for k in keyalln :  #soalan
 
 # mula bagi starting key
 
-keymula = input('starting key?= ')  #input jawapan
+keymula = input('\nstarting key?= ')  #input jawapan
 nomborMulaKey = int(keymula)
 
-print(nomborMulaKey) #nombor array key starting
+#print(nomborMulaKey) #nombor array key starting
 
 
 keymula1 = keyall[nomborMulaKey]
 
-print(keymula1) #key mula bagi starting
+print('\nYour first key = ' + keymula1) #key mula bagi starting
 
 
 maxnokey=nomborMulaKey+12
 
 keyAkhir1 = keyall[maxnokey] #key akhir bagi starting
 
-print(keyAkhir1)
+#print(keyAkhir1)
 
 
 #mula bagi shift key
 
-keyshift = input('shift key to?= ')
+keyshift = input('\nshift key to?= ')
 nomborShiftKey = int(keyshift)
 
-print(nomborShiftKey) #nombor array key shift
+#print(nomborShiftKey) #nombor array key shift
+print('\nYour shift key = ' + keyall[nomborShiftKey])
 
 tolak = nomborShiftKey - nomborMulaKey
 bezaKey=int(tolak)
 
-print(bezaKey)  #beza key awal dan shift
+print('\nDiffrence key = ' + str(bezaKey))  #beza key awal dan shift
 
-print("=========")
+print("\n=========ANSWERS=========")
 
-keycalc = nomborMulaKey+bezaKey
-keycalcEnd = maxnokey+bezaKey
+print('\nOriginal = shift\n')
+
+keycalc = nomborMulaKey+bezaKey #key mula tambah nilai nak shift
+keycalcEnd = maxnokey+bezaKey   #key akhir tambah nilai nak shift utk dpt nilai akhir baru
 
 while keycalc <= (keycalcEnd-1) : #ni untuk output tapi tak siap lagi
-    print(keyall[keycalc])
-    keycalc+= 1
 
+    print(keyall[nomborMulaKey] + ' = ' + keyall[keycalc])          #ini shift key
+    keycalc += 1
+    nomborMulaKey += 1
 
-#while keymula1 <= keyAkhir1 : #ni untuk output tapi tak siap lagi
-#    print(keyall[keymula1])
-#    keymula += 1
     
