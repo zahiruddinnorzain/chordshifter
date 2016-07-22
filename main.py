@@ -33,7 +33,24 @@ print(keyAkhir1)
 
 #mula bagi shift key
 
+keyshift = input('shift key to?= ')
+nomborShiftKey = int(keyshift)
 
+print(nomborShiftKey) #nombor array key shift
+
+tolak = nomborShiftKey - nomborMulaKey
+bezaKey=int(tolak)
+
+print(bezaKey)  #beza key awal dan shift
+
+print("=========")
+
+keycalc = nomborMulaKey+bezaKey
+keycalcEnd = maxnokey+bezaKey
+
+while keycalc <= (keycalcEnd-1) : #ni untuk output tapi tak siap lagi
+    print(keyall[keycalc])
+    keycalc+= 1
 
 
 #while keymula1 <= keyAkhir1 : #ni untuk output tapi tak siap lagi
