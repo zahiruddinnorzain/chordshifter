@@ -5,11 +5,15 @@ keyalln = ['0 =A','1 =A#','2 =B','3 =C','4 =C#','5 =D','6 =D#','7 =E','8 =F','9 
 #for k in keyall[:12]:
 #	print(k)
 
-for k in keyalln :
+
+
+for k in keyalln :  #soalan
 	print(k)
 
 
-keymula = input('starting key?= ')
+# mula bagi starting key
+
+keymula = input('starting key?= ')  #input jawapan
 nomborMulaKey = int(keymula)
 
 print(nomborMulaKey) #nombor array key starting
@@ -26,4 +30,13 @@ keyAkhir1 = keyall[maxnokey] #key akhir bagi starting
 
 print(keyAkhir1)
 
-#while 
+
+#mula bagi shift key
+
+
+
+
+#while keymula1 <= keyAkhir1 : #ni untuk output tapi tak siap lagi
+#    print(keyall[keymula1])
+#    keymula += 1
+    
