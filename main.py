@@ -60,7 +60,7 @@ print('\nYour shift key = ' + keyall[nomborShiftKey])
 tolak = nomborShiftKey - nomborMulaKey
 bezaKey=int(tolak)
 
-print('\nDiffrence key = ' + str(bezaKey))  #beza key awal dan shift
+print('\nDifference key = ' + str(bezaKey))  #beza key awal dan shift
 
 
 
